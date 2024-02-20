@@ -1,0 +1,13 @@
+[Unit]
+Description=Knocker up
+After=multi-user.target
+Requires=network-online.target
+
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/knocker-up
+DynamicUser=yes
+
+[Install]
+WantedBy=default.target
