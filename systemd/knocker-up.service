@@ -5,7 +5,7 @@ Requires=network-online.target
 
 
 [Service]
-Type=oneshot
+Type=simple
 ExecStart=/usr/local/bin/knocker-up
 DynamicUser=yes
 
